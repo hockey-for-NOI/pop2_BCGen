@@ -1,0 +1,20 @@
+K 13
+svn:mergeinfo
+V 839
+/pop2/branch_tags/cesm1_1_esmf02_tags/esmf02_02_cesm_pop_2_1_20110803:33446-33548
+/pop2/branch_tags/cpl7esmf_tags/cesm1_1_beta01_03:31711-31889
+/pop2/branch_tags/cpl7esmf_tags/cesm1_1_beta04_02:32189-33767
+/pop2/branch_tags/cpl7esmf_tags/cpl7esmf_cesm1_beta16_02:27487-27996
+/pop2/branch_tags/e52r_tags/e52r03_cesm_pop_2_1_20111210:33984-34009
+/pop2/branches/bldnml:34425-37544
+/pop2/branches/blockone:42265-43195
+/pop2/branches/cesm1_1_esmf02:32324-33445
+/pop2/branches/cpl7esmf_br/11b01:31707-31710
+/pop2/branches/cpl7esmf_br/cesm1_1_beta04:32186-32188
+/pop2/branches/cpl7esmf_cesm1_beta16:27483-27486
+/pop2/branches/e52r:33644-33983
+/pop2/trunk_tags/cesm_pop_2_1_20111206:32539-32685
+/pop2/trunk_tags/cesm_pop_2_1_20120123:34011-34424
+/pop2/trunk_tags/cesm_pop_2_1_20120320:35601-35621
+/pop2/trunk_tags/cesm_pop_2_1_20121114:41941-42264
+END

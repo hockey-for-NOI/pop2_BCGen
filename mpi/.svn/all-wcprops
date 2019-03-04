@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi
+END
+broadcast.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/broadcast.F90
+END
+POP_RedistributeMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/POP_RedistributeMod.F90
+END
+communicate.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/communicate.F90
+END
+mpi2s_gshalo.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/mpi2s_gshalo.F90
+END
+POP_CommMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/POP_CommMod.F90
+END
+ovf_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/ovf_utils.F90
+END
+check_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/check_mod.F90
+END
+POP_ReductionsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/POP_ReductionsMod.F90
+END
+gather_scatter.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/gather_scatter.F90
+END
+global_reductions.F90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/global_reductions.F90
+END
+POP_BroadcastMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/POP_BroadcastMod.F90
+END
+POP_HaloMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/mpi/POP_HaloMod.F90
+END

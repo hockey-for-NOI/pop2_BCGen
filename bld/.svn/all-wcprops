@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld
+END
+check_decomp.csh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/check_decomp.csh
+END
+pop2.buildnml.csh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/pop2.buildnml.csh
+END
+moby_activate.csh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/moby_activate.csh
+END
+pop_decomp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/pop_decomp.xml
+END
+README.build-namelist
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/README.build-namelist
+END
+regen_list.csh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/regen_list.csh
+END
+user_nl_pop2
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/user_nl_pop2
+END
+build-namelist
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/build-namelist
+END
+generate_pop_decomp.pl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/generate_pop_decomp.pl
+END
+moby_deactivate.csh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/moby_deactivate.csh
+END
+pop2.buildexe.csh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/pop2.buildexe.csh
+END
+pop2.cpl7.template
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/pop2.cpl7.template
+END

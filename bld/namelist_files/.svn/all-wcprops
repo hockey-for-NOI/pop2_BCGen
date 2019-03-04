@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/namelist_files
+END
+namelist_defaults_pop2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/namelist_files/namelist_defaults_pop2.xml
+END
+namelist_definition_pop2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/bld/namelist_files/namelist_definition_pop2.xml
+END

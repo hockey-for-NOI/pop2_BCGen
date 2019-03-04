@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf
+END
+POP_FinalMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf/POP_FinalMod.F90
+END
+ocn_comp_esmf.F90
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf/ocn_comp_esmf.F90
+END
+POP_MCT_vars_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf/POP_MCT_vars_mod.F90
+END
+ocn_communicator.F90
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf/ocn_communicator.F90
+END
+ocn_comp_mct.F90
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf/ocn_comp_mct.F90
+END
+POP_InitMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/61025/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521/drivers/cpl_esmf/POP_InitMod.F90
+END

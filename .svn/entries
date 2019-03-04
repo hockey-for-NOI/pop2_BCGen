@@ -1,0 +1,92 @@
+10
+
+dir
+86919
+https://svn-ccsm-models.cgd.ucar.edu/pop2/release_tags/cesm1_2_x_rel_25_cesm_pop_2_1_20130521
+https://svn-ccsm-models.cgd.ucar.edu
+
+
+
+2014-06-11T00:08:20.737214Z
+61025
+jshollen
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+fe37f545-8307-0410-aea5-b40df96820b5
+
+build
+dir
+
+serial
+dir
+
+test
+dir
+
+source
+dir
+
+tools
+dir
+
+bld
+dir
+
+doc
+dir
+
+mpi
+dir
+
+ChangeLog
+file
+
+
+
+
+2017-10-08T13:22:33.653810Z
+f59d81928eb82f56dd5f932240affb6c
+2014-06-11T00:08:20.737214Z
+61025
+jshollen
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11264
+
+input_templates
+dir
+
+drivers
+dir
+
