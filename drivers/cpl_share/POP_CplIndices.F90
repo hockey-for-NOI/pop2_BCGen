@@ -1,6 +1,5 @@
 module POP_CplIndices
   
-  use seq_flds_mod
   use mct_mod
 
   implicit none
@@ -68,8 +67,8 @@ contains
     ! Determine attribute vector indices
 
     ! create temporary attribute vectors
-    call mct_aVect_init(x2o, rList=seq_flds_x2o_fields, lsize=1)
-    call mct_aVect_init(o2x, rList=seq_flds_o2x_fields, lsize=1)
+    !call mct_aVect_init(x2o, rList=seq_flds_x2o_fields, lsize=1)
+    !call mct_aVect_init(o2x, rList=seq_flds_o2x_fields, lsize=1)
 
     index_o2x_So_t          = mct_avect_indexra(o2x,'So_t')
     index_o2x_So_u          = mct_avect_indexra(o2x,'So_u')

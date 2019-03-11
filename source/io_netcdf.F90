@@ -1291,7 +1291,7 @@
 
    use POP_FieldMod	           
    use POP_GridHorzMod
-   use Pop_HaloMod
+   use POP_HaloMod
 
 ! !INPUT/OUTPUT PARAMETERS:
 

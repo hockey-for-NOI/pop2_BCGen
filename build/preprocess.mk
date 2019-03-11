@@ -45,6 +45,7 @@ SRCDIRS := $(SRCDIRS) $(POPDIR)/source/
 SRCDIRS := $(SRCDIRS) $(POPDIR)/$(COMMDIR)/
 SRCDIRS := $(SRCDIRS) $(POPDIR)/mpi/
 SRCDIRS := $(SRCDIRS) $(POPDIR)/drivers/cpl_mct/
+SRCDIRS := $(SRCDIRS) $(POPDIR)/drivers/cpl_share/
 
 #----------------------------------------------------------------------------
 #

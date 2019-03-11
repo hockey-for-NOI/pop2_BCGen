@@ -17,11 +17,7 @@ SHELL = /bin/sh
 #
 #----------------------------------------------------------------------------
 
-TARGETX = pop
-ifeq ($(OPTIMIZE),no)
-  #  If building a debug version, append "_db" to the executable name
-  TARGETX := $(TARGETX)_db
-endif
+TARGETX = libpop.a
 
 #----------------------------------------------------------------------------
 #
@@ -106,7 +102,7 @@ endif
 
 $(POPEXEDIR)/$(TARGETX): $(OBJS)
 	@echo "  GNUmakefile is making target '$(TARGETX)'"
-	@$(LD) -o $(TARGETX) $(LDFLAGS) $(OBJS) $(LDLIBS) 
+	@$(AR) $(TARGETX) $(OBJS) 
 
 #----------------------------------------------------------------------------
 #

@@ -7,18 +7,18 @@ MODULE co2calc
   !   CVS:$Name$
   !-----------------------------------------------------------------------------
 
-  USE constants
-  USE blocks, ONLY : nx_block, ny_block, block, get_block
-  USE domain, ONLY : blocks_clinic
-  USE domain_size, ONLY : max_blocks_clinic
-  USE kinds_mod
-  USE state_mod, ONLY : ref_pressure
-  USE io_types, ONLY : stdout
-  USE time_management, ONLY : nsteps_run
+  use constants
+  use blocks, only : nx_block, ny_block, block, get_block
+  use domain, only : blocks_clinic
+  use domain_size, only : max_blocks_clinic
+  use kinds_mod
+  use state_mod, only : ref_pressure
+  use io_types, only : stdout
+  use time_management, only : nsteps_run
 
 #ifdef CCSMCOUPLED
    !*** ccsm
-  USE shr_vmath_mod
+  use shr_vmath_mod
 #endif
 
   IMPLICIT NONE
@@ -930,7 +930,7 @@ CONTAINS
     !---------------------------------------------------------------------------
 
 #ifdef CCSMCOUPLED
-    USE shr_sys_mod, ONLY : shr_sys_abort
+    use shr_sys_mod, only : shr_sys_abort
 #endif
 
     !---------------------------------------------------------------------------

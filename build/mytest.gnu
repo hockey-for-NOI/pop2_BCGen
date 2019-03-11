@@ -19,7 +19,8 @@ INCLDIR = /home/hq/share/BCGen_case/BCGen_inst/include
 F77 = mpif90
 F90 = mpif90
 LD = mpif90
-CC = gcc
+AR = ar crv
+CC = mpicc
 Cp = /usr/bin/cp
 Cpp = /usr/bin/gcc -P -E
 AWK = /usr/bin/awk
@@ -78,7 +79,7 @@ endif
 #
 #----------------------------------------------------------------------------
  
-FBASE = -v -I/home/hq/include -I$(DepDir) -I$(INCLDIR) 
+FBASE = -v -I/usr/local/include -I/home/hq/include -I$(DepDir) -I$(INCLDIR) -I/home/hq/share/BCGen_case/BCGen_inst/include -ffree-line-length-none -I/usr/local/esmf/mod/modO/Linux.gfortran.64.mpiuni.default/ 
 MODSUF = mod
 
 ifeq ($(TRAP_FPE),yes)
