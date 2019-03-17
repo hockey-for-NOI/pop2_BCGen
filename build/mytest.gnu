@@ -14,6 +14,9 @@
 #
 #----------------------------------------------------------------------
 
+
+
+
 INCLDIR = /home/hq/share/BCGen_case/BCGen_inst/include
 
 F77 = mpif90

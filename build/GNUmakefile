@@ -27,6 +27,10 @@
 #
 #  The bourne shell is safest for gmake
 SHELL = /bin/sh
+
+POPDIR=/home/hq/share/BCGen_case/BCGen_inst/models/ocn/pop2
+POPEXEDIR=/home/hq/share/BCGen_case/BCGen_inst/models/ocn/pop2/build
+POPARCH=mytest
 #
 #
 #  By default, you build optimized code.  To override, add "OPTIMIZE=no" 
