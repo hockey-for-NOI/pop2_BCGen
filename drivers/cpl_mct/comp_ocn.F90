@@ -150,6 +150,10 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
 
     errorCode = POP_Success
 
+#ifdef _OPENMP
+    nThreads = omp_get_max_threads()
+#endif
+
     call compMeta_getInfo(compInfo, comm=mpicom_o, ID=OCNID, domain=dom_o)
 
 #if (defined _MEMTRACE)
@@ -164,6 +168,8 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
 
     call POP_CplIndicesSet()
 
+    runtype = "initial"
+
     call POP_Initialize1(errorCode)
 
     if (index_x2o_Sa_co2prog > 0) then
@@ -174,6 +180,8 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
     endif
     call register_string('pop_init_coupled')
     call flushm (stdout)
+
+   call POP_Initialize2(errorCode)
 
     call ccsm_char_date_and_time
 
@@ -256,6 +264,9 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
        call exit_POP(sigAbort,'ERROR pop_cpl_dt and ocn_cpl_dt must be identical')
     end if
 
+   !if ( lsend_precip_fact )  then
+   !   call seq_infodata_PutData( infodata, precip_fact=precip_fact)
+   !end if
    call pop_sum_buffer
    
    call ocn_export_mct(ocn2x_ocnocn, errorCode)  
@@ -263,6 +274,11 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
       call POP_ErrorPrint(errorCode)
       call exit_POP(sigAbort, 'ERROR in ocn_export_mct')
    endif
+
+   !call seq_infodata_PutData( infodata, &
+   !     ocn_nx = nx_global , ocn_ny = ny_global)
+   !call seq_infodata_PutData( infodata, &
+   !ocn_prognostic=.true., ocnrof_prognostic=.true.)
 
    call shr_file_setLogUnit (shrlogunit)
    call shr_file_setLogLevel(shrloglev)
@@ -275,6 +291,17 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
         call memmon_reset_addr()
     endif
 #endif
+
+   !if (registry_match('qsw_distrb_iopt_cosz')) then
+   !call seq_infodata_GetData(infodata, &
+   !   orb_eccen=orb_eccen, orb_mvelpp=orb_mvelpp, orb_lambm0=orb_lambm0, orb_obliqr=orb_obliqr)
+
+   !  write(stdout,*) ' '
+   !  call document ('ocn_import_mct', 'orb_eccen   ',  orb_eccen)
+   !  call document ('ocn_import_mct', 'orb_mvelpp  ',  orb_mvelpp)
+   !  call document ('ocn_import_mct', 'orb_lambm0  ',  orb_lambm0)
+   !  call document ('ocn_import_mct', 'orb_obliqr  ',  orb_obliqr)
+   ! endif
 
    call document_time_flags
 
@@ -392,6 +419,10 @@ subroutine ocn_run_mct(compInfo, EClock, x2ocn, ocn2x, ierr)
        end if
        
     enddo advance
+
+    !if ( lsend_precip_fact ) then
+    !   call seq_infodata_PutData( infodata, precip_fact=precip_fact )
+    !end if
 
     ymd = iyear*10000 + imonth*100 + iday
     tod = ihour*seconds_in_hour + iminute*seconds_in_minute + isecond
