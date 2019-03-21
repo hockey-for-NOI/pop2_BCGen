@@ -148,6 +148,8 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
 
     integer :: lbnum
 
+    write(6,*) 'DEBUG POP2 INIT'
+
     errorCode = POP_Success
 
 #ifdef _OPENMP
@@ -155,6 +157,8 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
 #endif
 
     call compMeta_getInfo(compInfo, comm=mpicom_o, ID=OCNID, domain=dom_o)
+
+    write(6,*) 'DEBUG POP2 INIT GETINFO'
 
 #if (defined _MEMTRACE)
     call MPI_comm_rank(mpicom_o,iam,ierr)
@@ -164,9 +168,12 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
     endif
 #endif
 
+
     mpi_communicator_ocn = mpicom_o
 
     call POP_CplIndicesSet()
+
+    write(6,*) 'DEBUG POP2 INIT CPLINDICESSET'
 
     runtype = "initial"
 
@@ -285,7 +292,7 @@ subroutine ocn_init_mct(compInfo, EClock, x2ocn_ocnocn, ocn2x_ocnocn, ierr)
 
 #if (defined _MEMTRACE)
     if(iam  == 0) then
-!        write(6,*) 'ocn_init_mct:end::'
+        !write(6,*) 'ocn_init_mct:end::'
         lbnum=1
         call memmon_dump_fort('memmon.out','ocn_init_mct:end::',lbnum) 
         call memmon_reset_addr()
