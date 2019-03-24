@@ -71,9 +71,6 @@ contains
     call mct_aVect_init(o2x, rList=trim(metaData%flds_ocn2x))
     call mct_aVect_init(x2o, rList=trim(metaData%flds_x2ocn))
 
-    write(6,*) trim(metaData%flds_ocn2x)
-    write(6,*) trim(metaData%flds_x2ocn)
-
     index_o2x_So_t          = mct_avect_indexra(o2x,'So_t')
     index_o2x_So_u          = mct_avect_indexra(o2x,'So_u')
     index_o2x_So_v          = mct_avect_indexra(o2x,'So_v')
